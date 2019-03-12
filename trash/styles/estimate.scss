@@ -1,0 +1,175 @@
+.estimate-table {
+  float: left;
+  width: 100%;
+  border: solid 1px #e6eaee;
+}
+$nw: 60;
+$vw: 90;
+$pw: 115;
+$tw: 140;
+$cw: 60;
+
+.estimate-table-head {
+  //font-size: .875rem;
+  font-weight: 500;
+  background-color: #556080;
+  border-bottom: solid 1px #e6eaee;
+  font-size: 15px;
+  border-radius: 4px 4px 0 0;
+  .c-table__cell.estimate-table-cell {
+    border-right: solid 1px #323a47;
+    color: #ffffff;
+  }
+}
+
+.parent-job-wrapper-2 {
+  padding-left: 36px;
+  position: relative;
+  float: left;
+  width: 100%;
+}
+
+.parent-job-wrapper-2::before {
+  content: "";
+  position: absolute;
+  left: 35px;
+  top: 0;
+  width: 1px;
+  height: 100%;
+  background: #e6eaee;
+}
+
+.estimate-tree-object-job-volume {
+  width: 140px;
+  padding-left: 82px;
+  position: absolute;
+  right: 240px;
+  top: 12px;
+  font-size: 12px;
+}
+
+.estimate-tree-object-job-item {
+  width: 120px;
+  display: inline-block;
+  position: relative;
+  top: -3px;
+}
+
+.estimate-tree-object-job-volume-total {
+  width: 150px;
+  text-align: right;
+  padding-right: 16px;
+  position: absolute;
+  right: 0;
+  top: 7.5px;
+}
+
+.tree-item-tube {
+  position: absolute;
+  left: 0;
+  top: 16.5px;
+  line-height: 0;
+  &::before {
+    background: #e6eaee;
+    width: 15px;
+    height: 1px;
+    display: block;
+    content: "";
+  }
+  .fa {
+    position: relative;
+    top: -7px;
+    left: -1.5px;
+    font-size: 15px;
+    color: #bcbbbb;
+    transform: rotateZ(45deg);
+    cursor: pointer;
+    transition: all 0.2s ease;
+  }
+}
+
+.parent-job-wrapper {
+  float: left;
+  width: 100%;
+}
+
+.estimate-tree-object-job.rm-container.parent-job-wrapper {
+  padding-left: 44px;
+}
+
+.rms-container-inner {
+  float: left;
+  width: 100%;
+  position: relative;
+}
+
+.rms-container {
+  position: relative;
+  float: left;
+  width: 100%;
+}
+
+.parent-object-wrapper {
+  float: left;
+  width: 100%;
+}
+.estimate-table-row {
+  display: flex;
+}
+.c-table__cell.estimate-table-cell {
+  padding: 10px 14px 10px 14px;
+  border-right: solid 1px #4a5474;
+}
+
+.estimate-table-cell-n {
+  width: $nw+px;
+  text-align: center;
+
+}
+
+.estimate-table-cell-name {
+  flex-grow: 1;
+}
+
+.estimate-table-cell-vol-type {
+  width: $vw+px;
+  text-align: center;
+
+}
+.estimate-table-cell-vol {
+  width: $vw+px;
+  text-align: center;
+
+}
+
+.estimate-table-cell-price {
+  width: $pw+px;
+  text-align: center;
+
+}
+
+.estimate-table-cell-name {
+
+}
+
+.estimate-table-cell-total {
+  width: $tw+px;
+  text-align: center;
+
+}
+
+.estimate-table-cell-comment {
+  width: $cw+px;
+  text-align: center;
+  border-right: none !important;
+}
+
+.parent-object-title {
+  background: #f5f8fa;
+  padding: 10px 0 10px 21px;
+  color: #7f8fa4;
+  border-bottom: solid 1px #e6eaee;
+  i {
+    font-size: 14px;
+  }
+}

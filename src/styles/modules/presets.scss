@@ -1,0 +1,39 @@
+
+
+h1 {
+  font-size: 29px;
+}
+html {
+  color: #87909e;
+  background: #f8f8f8;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+i {
+  font-style: normal;
+}
+
+body, ul {
+  margin: 0;
+  list-style-type: none;
+  padding: 0;
+}
+
+html, input, button, textarea, select {
+  font-family: ProximaNova;
+}
+
+input, button, textarea, select {
+  &:focus {
+    outline: none;
+  }
+}
+img {
+  max-width: 100%;
+}
+a {
+  text-decoration: none;
+}

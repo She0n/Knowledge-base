@@ -1,0 +1,146 @@
+
+
+.vue-tags-input {
+  position: relative;
+  background-color: #fff;
+
+  input[disabled] {
+    background-color: transparent;
+  }
+
+  .vue-tags-input.vue-tags-input.disabled {
+    opacity: 0.5;
+
+    * {
+      cursor: default;
+    }
+  }
+
+  .input {
+    border: 1px solid #e6eaee;
+    display: flex;
+    padding: 4px;
+    flex-wrap: wrap;
+    border-radius: 4px;
+
+  }
+
+  .tags {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+
+  .tag {
+    color: #354052;
+    display: flex;
+    padding: 1px 8px 2px 12px;
+    margin: 2px 3px 2px 0;
+    font-size: 0.875rem;
+    background: #f3faff;
+    border-radius: 4px;
+    border: solid 1px #c5e7ff;
+
+    &:focus {
+      outline: none;
+    }
+
+    .content {
+      display: flex;
+      align-items: center;
+    }
+
+    .tag-center {
+      position: relative;
+    }
+
+    span {
+      line-height: inherit;
+    }
+
+    span.hidden {
+      padding-left: 14px;
+      visibility: hidden;
+      height: 0px;
+      white-space: pre;
+    }
+
+    .actions {
+      margin-left: 7px;
+      display: flex;
+      align-items: center;
+      font-size: 0.875rem;
+      position: relative;
+      top: 0.5px;
+      i {
+        cursor: pointer;
+      }
+    }
+
+    &:last-child {
+      margin-right: 4px;
+    }
+
+    &.invalid, &.tag.deletion-mark {
+      background-color: #f95359;
+      color: #fff;
+    }
+  }
+
+  .new-tag-input-wrapper {
+    display: flex;
+    flex: 1 0 auto;
+    padding: 3px 5px;
+    margin: 2px;
+    font-size: 0.875rem;
+
+    input {
+      flex: 1 0 auto;
+      min-width: 100px;
+      border: none;
+      margin: 0px;
+      padding: 0px 0 0;
+      font-size: 0.875rem;
+      color: #354052;
+    }
+  }
+
+  .new-tag-input {
+    line-height: inherit;
+    &:focus {
+      outline: none;
+    }
+    &::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+      color: #cdd0d4;
+    }
+  }
+
+  .autocomplete {
+    border-radius: 0 0 4px 4px;
+    border-top: none;
+    position: absolute;
+    top: 100%;
+    margin-top: 4px;
+    width: 100%;
+    background-color: #fff;
+    z-index: 20;
+    border: 1px solid #e6eaee;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+  }
+
+  .item {
+    > div {
+      cursor: pointer;
+      width: 100%;
+      padding: .5rem .9375rem;
+      border-bottom: 1px solid #e6eaee;
+      color: #354052;
+      font-size: .875rem;
+      font-weight: 400;
+    }
+  }
+
+  .selected-item {
+    background-color: #f2f4f7;
+  }
+}

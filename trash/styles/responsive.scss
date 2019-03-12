@@ -1,0 +1,353 @@
+@media(max-width: 1279px) {
+  .hr-row-last {
+    .stats-col-title3 {
+      text-align: center;
+      padding-right: 0;
+    }
+  }
+  .stats-col-b {
+    padding-left: 15px;
+    margin-top: 25px;
+    &::before {
+      content: "";
+      position: absolute;
+      top: -25px;
+      left: 14px;
+      height: 25px;
+      background: #eff3f6;
+      border-top: solid 1px #e7ecf0;
+      border-bottom: solid 1px #e7ecf0;
+      right: 14px;
+    }
+  }
+  .stats-col-c {
+    padding-right: 0;
+  }
+  .stats-col-d {
+    padding-left: 0;
+  }
+  .u-mh-charts-d {
+    height: auto;
+  }
+  .stats-col-a {
+    padding-right: 15px;
+  }
+  .n-col-1 {
+    padding-right: 15px;
+  }
+  .estimate-quiz-rooms-col {
+    max-width: 100%;
+  }
+}
+
+@media(max-width: 530px) {
+  .meta-delimeter {
+    display: block;
+    margin-bottom: 2px;
+  }
+  .project-title {
+    margin-bottom: 6px !important;
+  }
+  .project-gallery-top {
+    position: static;
+    text-align: left;
+    padding-left: 10px;
+    margin-bottom: 15px;
+    margin-top: -10px;
+  }
+}
+
+@media(min-width: 1281px) and (max-width: 1470px) {
+  .stats-row-1 {
+    .stats-col-subtitle {
+      height: 48px;
+      padding-right: 25px;
+    }
+    .helper-span {
+      display: block;
+    }
+  }
+}
+
+@media(max-width: 768px) {
+
+  .chat-form-wrapper {
+    height: 45px;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  .padding-correct-1 {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .btn-correct-1 {
+    margin-top: 15px;
+    width: 100%;
+  }
+  .search-caption-item {
+    padding: 0;
+    width: 100% !important;
+    .u-mb-small {
+      margin-bottom: 7px !important;
+    }
+  }
+  .n-field-label {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .n-mh-col-2 {
+    min-height: 0;
+  }
+  .echarts-d .echarts {
+    height: 1000px;
+  }
+  .echarts-c .echarts {
+    height: 400px;
+  }
+  .u-text-center-xs {
+    text-align: center !important;
+  }
+
+  .stats-row-2 {
+    .helper-span {
+      display: block;
+    }
+  }
+  .stats-page {
+    .page-heading-1 {
+      padding: 0;
+      margin: 0;
+    }
+    .stats-period-selector {
+      margin-left: 0;
+      line-height: 20px;
+      margin-top: 10px;
+    }
+  }
+
+.hr-stat-outer {
+  display: none !important;
+}
+
+  .estimate-quiz-summaries .k-v {
+    padding-left: 100px !important;
+  }
+  .estimate-quiz-rooms-col {
+    margin: 0 auto 25px;
+    float: none;
+  }
+  .estimate-quiz-field-item {
+    padding: 0 30px !important;
+  }
+  .estimate-quiz-nav {
+    background: transparent;
+  }
+  .estimate-quiz-field {
+    padding-left: 0;
+  }
+  .estimate-quiz-field-label {
+    padding-top: 8px;
+    position: static;
+    margin-bottom: 15px;
+    text-align: center;
+  }
+  .estimate-quiz-rooms-list-title, .estimate-quiz-total {
+    text-align: center;
+  }
+  .estimate-price-mode {
+    margin-right: 0;
+    float: left;
+    width: 50%;
+  }
+  .estimate-btns {
+    position: static;
+
+    float: right;
+    margin-top: 19px;
+  }
+  .modify-project-col {
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    button {
+      margin-right: 0 !important;
+    }
+  }
+  .service-type-x {
+    width: 100%;
+  }
+
+  .project-selector {
+    padding: 25px 0 0;
+    .c-dropdown {
+      text-align: center;
+    }
+  }
+}
+
+@media(min-width: 993px) {
+  #closeSidebar {
+    display: none;
+  }
+}
+
+
+
+@media(max-width: 993px) {
+  #n-gallery-modal-image-wrapper {
+    width: 100% !important;
+    padding: 0 !important;
+  }
+
+  .project-page {
+    .c-tabs__link {
+      display: block;
+      margin: 0;
+      padding: 10px 0 10px;
+      text-align: center;
+    }
+    .c-tabs__list li.active .c-tabs__link, .c-tabs__list li.is-active .c-tabs__link {
+      border: solid 2px #2ea1f8;
+    }
+    .c-tabs__list li {
+      display: block;
+      width: 100%;
+    }
+  }
+
+  .gallery-right-control {
+    right: -35px;
+  }
+  #n-gallery-modal-desc-placeholder {
+    display: none !important;
+  }
+  .n-gallery-modal-image-desc {
+    width: 100%;
+    position: static;
+    float: left;
+  }
+  #n-gallery-modal {
+    padding-right: 0 !important;
+    .c-modal__dialog {
+      max-width: 85%;
+    }
+  }
+}
+
+@media(max-width: 600px) {
+  .gallery-right-control {
+    right: -10px;
+  }
+  .gallery-left-control {
+    left: -10px;
+  }
+}
+
+
+@media(min-width: 1280px) and (max-width: 1440px) {
+  .n-heading-title-3 {
+    width: 165px;
+  }
+}
+
+@media(max-width: 500px) {
+
+  .u-text-center-xs2 {
+    text-align: center !important;
+  }
+  .document-contract-row {
+    padding-left: 0;
+    margin-bottom: 70px;
+  }
+  .document-contract-image {
+    position: static;
+    text-align: center;
+    margin: 0 auto 30px;
+  }
+  .document-contract-data {
+    text-align: center;
+    .meta-delimeter {
+      margin-right: 0;
+    }
+  }
+  .estimate-quiz-step {
+    padding: 0 !important;
+  }
+  .estimate-quiz {
+    padding: 0 !important;
+  }
+  .estimate-quiz-prev {
+    left: auto;
+    top: -74px;
+    right: 25px;
+  }
+  .estimate-quiz-nav {
+    width: 30px;
+  }
+  .quiz-step-counter {
+    padding-left: 40px;
+  }
+  .estimate-quiz-next {
+    left: auto;
+    top: -74px;
+    right: 0;
+  }
+  .project-page {
+    .c-stage__header {
+      .c-stage__header-img.o-media__img {
+        display: none;
+      }
+      .c-stage__header-title {
+        text-align: center;
+      }
+      .meta-delimeter {
+        margin-right: 0;
+      }
+    }
+  }
+
+}
+
+
+@media(max-width: 1200px) {
+  .search-caption-item.search-caption-item-wide {
+    width: 250px;
+  }
+}
+
+@media(max-width: 820px) and (min-width: 768px) {
+  .search-caption-item.search-caption-item-wide {
+    width: 215px;
+  }
+}
+
+
+@media(max-width: 1650px) {
+  .estimate-col-mt-lg {
+    margin-top: 40px;
+  }
+}
+
+@media(min-width: 992px) and (max-width: 1110px) {
+  .hr-panels-1 {
+      .helper-span {
+        display: block;
+      }
+  }
+}
+
+@media(max-width: 992px) {
+  #component-state .v-al-middle {
+    left: 15px !important;
+  }
+}
+
+@media(min-width: 1650px) and (max-width: 1740px) {
+
+  .hr-panels-1 {
+      .helper-span {
+        display: block;
+      }
+  }
+
+}

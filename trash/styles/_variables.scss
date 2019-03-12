@@ -1,0 +1,89 @@
+$colorSuccess: #5cb85c;
+$colorInfo: #5bc0de;
+$boxShadow: 0 5px 27px rgba(0,0,0,0.03);
+$blue: rgb(24,117,240);
+$darkBlue: rgb(24,117,240);
+$green: rgb(67, 190, 128);
+
+
+.m-spinner {
+  background-color: #e2e5ec
+}
+
+.m-spinner.m-spinner--skin-dark {
+  background-color: #a9acb8
+}
+
+.m-spinner.m-spinner--brand {
+  background-color: #716aca
+}
+
+.m-spinner.m-spinner--metal {
+  background-color: #c4c5d6
+}
+
+.m-spinner.m-spinner--light {
+  background-color: #fff
+}
+
+.m-spinner.m-spinner--accent {
+  background-color: #00c5dc
+}
+
+.m-spinner.m-spinner--focus {
+  background-color: #9816f4
+}
+
+.m-spinner.m-spinner--primary {
+  background-color: #5867dd
+}
+
+.m-spinner.m-spinner--success {
+  background-color: #34bfa3
+}
+
+.m-spinner.m-spinner--info {
+  background-color: #36a3f7
+}
+
+.m-spinner.m-spinner--warning {
+  background-color: #ffb822
+}
+
+.m-spinner.m-spinner--danger {
+  background-color: #f4516c
+}
+
+.m-loader {
+  position: relative
+}
+
+.m-loader:before {
+  content: '';
+  box-sizing: border-box;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border-top: 2px solid #07d;
+  border-right: 2px solid transparent;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  -webkit-animation: m-loader-rotate .6s linear infinite;
+  -moz-animation: m-loader-rotate .6s linear infinite;
+  -ms-animation: m-loader-rotate .6s linear infinite;
+  -o-animation: m-loader-rotate .6s linear infinite;
+  animation: m-loader-rotate .6s linear infinite
+}
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  .m-loader:before {
+    animation: none !important
+  }
+}
+
+
+
+

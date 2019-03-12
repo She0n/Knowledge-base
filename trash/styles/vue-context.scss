@@ -1,0 +1,34 @@
+.v-context[data-v-d6913a16] {
+  display: block;
+  margin: 0;
+  padding: 0;
+  position: fixed;
+  width: 9.375rem;
+  transition: visibility .3s ease, opacity .3s ease;
+  border: 1px solid #e6eaee;
+  border-radius: 4px;
+  background-color: #fff;
+  text-align: left;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+  z-index: 400;
+  outline: none;
+}
+
+.v-context ul[data-v-d6913a16] {
+  font-size: 0.875rem;
+}
+
+.v-context ul li[data-v-d6913a16] {
+  cursor: pointer;
+  display: block;
+  padding: .5rem .9375rem;
+  border-bottom: 1px solid #e6eaee;
+  color: #354052;
+  font-size: .875rem;
+  font-weight: 400;
+  &:hover {
+    background-color: #f2f4f7;
+    text-decoration: none;
+    color: inherit;
+  }
+}

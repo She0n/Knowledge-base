@@ -1,0 +1,79 @@
+<div class="estimate-tree-object-jobs-categories dropdown-parent-container">
+                              <div class="estimate-tree-object-jobs-categories-title u-relative">
+                                <i aria-hidden="true" class="fa fa-folder-open-o u-mr-xsmall"></i>
+                                <span v-html="renderJobCategoryTitle(activeJob)"></span>
+                                <i class="fa fa-angle-down estimate-dropdown-toggler" v-on:click="toggleDDTab($event)"></i>
+                              </div>
+                              <div class="dropdown-child-container">
+                                <div class="estimate-tree-object-job">
+                                  <div class="estimate-tree-object-job-title">
+                                    <div v-html="getJobTitle(activeJob)"></div>
+                                  </div>
+                                  <div class="estimate-tree-object-job-volume">
+                                    <div class="c-input n-calc-price-input locked" v-html="activeJob.volume"></div>
+                                    <span class="estimate-tree-object-job-item">
+                                        <span  v-html="renderSimpleJobTail(activeJob)"></span>
+                                      </span>
+                                  </div>
+                                  <div class="estimate-tree-object-job-volume-total" >
+                                    <div v-if="activeJob.prices.comfort" v-html="renderJobTotal({
+                                      volume: activeJob.volume,
+                                      job: activeJob
+                                    })"></div>
+                                  </div>
+                                </div> <!-- cped -->
+                                <div class="estimate-tree-job-childs-list" v-if="activeJob.childs.length">
+                                  <div v-for="child, childIndex in activeJobChilds">
+                                    <div class="estimate-tree-child-job estimate-tree-object-job">
+                                      <div class="estimate-tree-object-drop-item"><i class="fa fa-minus" v-on:click="dropActiveJobChild(childIndex)"></i></div>
+                                      <div class="estimate-tree-child-job-title estimate-tree-object-job-title" v-html="getJobTitle(child)"></div>
+                                      <div class="estimate-tree-object-job-volume">
+                                        <input type="text" onkeypress="return validateFloatInput(event)" v-model="activeJob.childs[childIndex].volume"  maxlength="5" class="c-input n-calc-price-input">
+                                        <span class="estimate-tree-object-job-item">
+                                          <span  v-html="renderSimpleJobTail(child)"></span>
+                                        </span>
+                                        <div class="estimate-tree-object-job-controls">
+                                          <div class="small-cb-wrapper">
+                                            <input type="checkbox" :id="'child-job-childindex-'+childIndex" v-model="activeJob.childs[childIndex].is_fixed" class="small-cb">
+                                            <label :for="'child-job-childindex-'+childIndex" class="small-cb--label">фикс.</label>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="estimate-tree-object-job-volume-total">
+                                        <span v-if="child.prices.comfort" v-html="renderJobTotal({
+                                          volume: activeJob.childs[childIndex].volume,
+                                          job: child,
+                                          is_fixed: activeJob.childs[childIndex].is_fixed
+                                        })"></span>
+                                      </div>
+                                    </div>
+                                    <div class="estimate-tree-job-childs-list-2" v-if="child.childs && child.childs.length">
+                                      <div v-for="child2, child2index in child.childs">
+                                        <div class="estimate-tree-child-job estimate-tree-object-job">
+                                          <div class="estimate-tree-child-job-title estimate-tree-object-job-title" v-html="getJobTitle(child2)"></div>
+                                          <div class="estimate-tree-object-job-volume">
+                                            <div  v-html="renderSubchildVolume(activeJob.childs[childIndex].volume, child.childs[child2index].volume, child2.is_fixed)" class="c-input n-calc-price-input locked"></div>
+                                            <span class="estimate-tree-object-job-item">
+                                              <span  v-html="renderSimpleJobTail(child2)"></span>
+                                            </span>
+                                            <div class="estimate-tree-object-job-controls">
+                                              <div class="small-cb-wrapper">
+                                                <input type="checkbox" :id="'child-job-childindex-'+childIndex" v-model="child2.is_fixed" disabled class="small-cb">
+                                                <label :for="'child-job-'+childIndex+'-child2index-'+child2index" class="small-cb--label">фикс.</label>
+                                              </div>
+                                            </div>
+                                          </div>
+                                          <div class="estimate-tree-object-job-volume-total">
+                                            <span v-if="child2.prices.comfort" v-html="renderJobTotal({
+                                              volume: child2.is_fixed ? (isFieldEmpty(activeJob.childs[childIndex].volume) ? 0 : child.childs[child2index].volume) : activeJob.childs[childIndex].volume,
+                                              job: child2,
+                                              is_fixed: child2.is_fixed
+                                            })"></span>
+                                          </div>
+                                        </div>
+                                       </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
